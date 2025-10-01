@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Layouts.GridPage"
+             Title="GridPage">
+
+    <Grid ColumnSpacing="10"
+          RowSpacing="25"
+          Padding="15">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        
+        <Label Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Text="Titel" FontSize="Title" BackgroundColor="DarkGray"/>
+        <Label Grid.Row="1" Grid.Column="0" Grid.RowSpan="2" Grid.ColumnSpan="2" BackgroundColor="DarkBlue"/>
+        <Label Grid.Row="1" Grid.Column="3" BackgroundColor="DarkGreen"/>
+        <Label Grid.Row="2" Grid.Column="2" BackgroundColor="DarkMagenta"/>
+        <Label Grid.Row="3" Grid.Column="0" BackgroundColor="DarkOrange"/>
+        <Label Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Margin="20" BackgroundColor="DarkRed"/>
+    </Grid>
+
+</ContentPage>
